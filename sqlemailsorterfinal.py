@@ -8,7 +8,7 @@ from psycopg2 import sql
 
 QUIT = "QUIT"
 USER_ADDRESS = "aidanmtherrien@gmail.com"
-
+API_KEY = ""
 
 """
 Conversion from MBOX to Dictionary 
@@ -348,7 +348,7 @@ def lang_call(email, connection):
     """
 
     # Langchain Call
-    llm = ChatOpenAI(openai_api_key="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")
+    llm = ChatOpenAI(openai_api_key=API_KEY)
     output_parser = StrOutputParser()
     chain = llm | output_parser
     output = chain.invoke(prompt_updater(email, connection))
