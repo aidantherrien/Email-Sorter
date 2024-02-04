@@ -308,7 +308,7 @@ def prompt_updater(email, connection):
     # Getting Necessary Data
     known = fetch_column_data(connection, f"{username}extras", "known_addresses")
     alert_types = fetch_column_data(connection, f"{username}extras", "alerts_types")
-    sender_types = fetch_column_data(connection, f"{username}extras", "alerts_types")
+    sender_types = fetch_column_data(connection, f"{username}extras", "sender_types")
     want_types = fetch_column_data(connection, f"{username}extras", "want_types")
 
 
