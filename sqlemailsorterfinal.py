@@ -511,11 +511,11 @@ def connect_to_db():
     """
     try:
         connection = psycopg2.connect(
-            user="sqladmin",
-            password="1234",
+            user="USERNAME",
+            password="PASSWORD",
             host="localhost",
             port="5432",
-            database="aiprogram"
+            database="DATABASE_NAME"
         )
         print("Successfully Connected to SQL")
         return connection
