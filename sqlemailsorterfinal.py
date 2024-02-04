@@ -538,7 +538,6 @@ def create_emails_table(connection):
                 replied VARCHAR(225),
                 email_date VARCHAR(225),
                 perm_type VARCHAR(255),
-                repeat_type VARCHAR(225),
                 urgency VARCHAR(225),
                 known VARCHAR(225),
                 alert VARCHAR(225),
