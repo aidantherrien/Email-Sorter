@@ -539,7 +539,6 @@ def create_emails_table(connection):
                 email_date VARCHAR(225),
                 perm_type VARCHAR(255),
                 urgency VARCHAR(225),
-                known VARCHAR(225),
                 alert VARCHAR(225),
                 sender_type VARCHAR(225),
                 sender_want VARCHAR(225)
